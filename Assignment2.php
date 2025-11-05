@@ -9,14 +9,14 @@
 <div class="container py-5">
 
     <?php
-    echo "<div class='alert alert-warning'>";
+    echo "<div style='background-color: #35c1f8ff; padding: 20px; border-radius: 8px;'>";
     echo "<h1 class='text-center mb-4'>Assignment 2 <br> PHP Function Showcase <br> Evan Breti</h1>";
     // 2. Declare and Use Functions
     function calculateSum($a, $b) {
         return $a + $b;
     }
     $sum = calculateSum(15, 25);
-    echo "<div class='alert alert-primary'>";
+    echo "<div class='alert alert-info'>";
     echo "<h4 class='alert-heading'>Declare and Use Functions</h4>";
     echo "Sum of 15 and 25 is: <strong>$sum</strong></div>";
 
@@ -34,7 +34,7 @@
     // 4. Arrays
     $fruits = ["Apple", "Banana", "Cherry", "Blueberry", "Strawberry"];
     function printArray($array) {
-        echo "<div class='alert alert-success'>";
+        echo "<div class='alert alert-info'>";
         echo "<h4 class='alert-heading'>Arrays</h4>";
         echo "<ul class='mb-0'>";
         foreach ($array as $item) {
@@ -69,7 +69,7 @@
         $length = strlen($text);
         $hyphenated = str_replace(" ", "-", $text);
 
-        echo "<div class='alert alert-primary'>";
+        echo "<div class='alert alert-info'>";
         echo "<h4 class='alert-heading'>Using Built-in Functions</h4>";
         echo "<p><strong>Original:</strong> $text</p>";
         echo "<p><strong>Uppercase:</strong> $uppercase</p>";
